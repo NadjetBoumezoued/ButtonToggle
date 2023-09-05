@@ -1,0 +1,66 @@
+body {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.normal-mode {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.mode-button {
+    border: none;
+    background:rgb(134, 200, 225); 
+    padding: 0; 
+    border-radius: 50px;
+    height: 32px;
+    width: 70px;
+    cursor: pointer; 
+
+
+}
+.dark-mode .mode-button {
+    border: none; 
+    background:rgb(0, 72, 255); 
+    padding: 0; 
+    border-radius: 50px;
+    height: 32px;
+    width: 70px;
+    cursor: pointer; 
+}
+
+.mode-icon {
+    height: 32px; 
+    width: 32px;
+    margin: 0; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.sun-icon {
+    transform: translateX(-20px); 
+}
+.moon-icon {
+    display: none; 
+}
+
+
+.normal-mode .sun-icon {
+    transform: translateX(-20px); 
+}
+
+.dark-mode .moon-icon {
+    display: none;
+    transform: translateX(20px);
+}
+
